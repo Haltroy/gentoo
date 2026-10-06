@@ -19,7 +19,7 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="backlight evdev experimental gps jack +libinput +logind mpd mpris network niri pipewire pulseaudio screencast sndio systemd test tray +udev upower wifi"
+IUSE="backlight evdev experimental gps jack +libinput +logind mango mpd mpris network niri pipewire pulseaudio screencast sndio systemd test tray +udev upower wifi"
 REQUIRED_USE="
 	upower? ( logind )
 	backlight? ( udev logind )
@@ -103,6 +103,7 @@ src_configure() {
 		$(meson_use backlight login-proxy)
 		$(meson_use experimental)
 		$(meson_use niri) # communicates by socket with gui-wm/niri::guru
+		$(meson_use mango) # for gui-wm/mangowm::guru
 	)
 	meson_src_configure
 }
