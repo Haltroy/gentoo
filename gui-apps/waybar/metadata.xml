@@ -19,6 +19,7 @@
 		<flag name="evdev">Enable libevdev support for evdev related features</flag>
 		<flag name="libinput">Enable libinput support for libinput related features</flag>
 		<flag name="logind">Enable support for logind (bluetooth and idle inhibit)</flag>
+		<flag name="mango">Enable support for MangoWM Wayland compositor</flag>
 		<flag name="mpd">Enable support for the Music Player Daemon</flag>
 		<flag name="mpris">Enable support for mpris</flag>
 		<flag name="niri">Enable support for Niri Wayland compositor</flag>
